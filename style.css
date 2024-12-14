@@ -1,0 +1,302 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: 'PT Serif', serif;
+    background-color: #f4f4f4;
+    color: #333;
+    overflow-x: hidden;
+    transition: background-color 0.5s ease;
+}
+
+/* Navbar Styles */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: background-color 0.3s ease;
+}
+
+.navbar .logo {
+    color: white;
+    font-size: 1.8em;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 30px;
+}
+
+.nav-links a {
+    color: whitesmoke;
+    font-size: 1.2em;
+    transition: color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: orange;
+    transform: scale(1.1);
+}
+
+/* Header Section */
+header {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./Image/Aurora.png');
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.header-content {
+    margin-bottom: 10%;
+    color: whitesmoke;
+    text-align: center;
+    z-index: 1;
+    opacity: 0;
+    animation: fadeInUp 1.5s ease-out forwards;
+}
+
+.header-content h2 {
+    font-size: 4vmin;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+.line {
+    width: 150px;
+    height: 4px;
+    background: orange;
+    margin: 10px auto;
+    border-radius: 5px;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-out forwards;
+}
+
+.header-content h1 {
+    font-size: 7vmin;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.5);
+}
+
+.header-content h1 a {
+    color: whitesmoke;
+    text-decoration: none;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.header-content h1 a:hover {
+    color: orange;
+    text-decoration: underline;
+}
+
+/* Introduction Section */
+#intro {
+    padding: 60px 20px;
+    background: linear-gradient(to bottom, #1a2b3a, #0a1a25);
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    opacity: 0;
+    animation: fadeInUp 1.5s ease-out forwards;
+}
+
+#intro h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+#intro p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* About Me Section */
+#about {
+    padding: 60px 20px;
+    background: linear-gradient(to bottom, #1a2b3a, #0a1a25);
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    opacity: 0;
+    animation: fadeInUp 1.5s ease-out forwards;
+}
+
+#about h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+#about p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.profile-picture {
+    max-width: 200px;
+    border-radius: 50%;
+    margin: 20px 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.7);
+    transform: scale(0.9);
+    transition: transform 0.3s ease;
+}
+
+.profile-picture:hover {
+    transform: scale(1);
+}
+
+/* Achievements Section */
+#achievements {
+    padding: 60px 20px;
+    background: linear-gradient(to bottom, #1a2b3a, #0a1a25);
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    opacity: 0;
+    animation: fadeInUp 1.5s ease-out forwards;
+}
+
+#achievements h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+#achievements ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.2em;
+    line-height: 1.8;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+#achievements li {
+    margin-bottom: 15px;
+    opacity: 0;
+    animation: fadeInUp 1.5s ease-out forwards;
+}
+
+/* Sustainability Section */
+#SDG-12 {
+    padding: 60px 20px;
+    background: linear-gradient(to bottom, #0a1a25, #123442);
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    opacity: 0;
+    animation: fadeInUp 1.5s ease-out forwards;
+}
+
+#SDG-12 h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+#SDG-12 p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Footer Section */
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    transition: background-color 0.3s ease;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+    color: orange;
+}
+
+/* Keyframes for Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
